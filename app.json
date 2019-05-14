@@ -14,5 +14,11 @@
             "required": true
         }
     },
-    "stack": "container"
+    "stack": "container",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
