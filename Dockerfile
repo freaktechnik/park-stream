@@ -1,9 +1,5 @@
 FROM jrottenberg/ffmpeg:3.4-alpine
 
-# Copy image to stream into the container
-ADD ./assets /opt/assets/
-WORKDIR /opt/assets
-
 # Run as a separate user
 RUN adduser -D streamer
 USER streamer
