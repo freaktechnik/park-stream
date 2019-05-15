@@ -1,8 +1,10 @@
 # Park stream
 
-Park a Twitch stream on a free heroku dyno. Useful for extension reviews.
+Park a Twitch stream on a free heroku dyno. Useful for extension reviews. Streams a test image to a channel 24/7 (well, almost).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg?template=https://github.com/freaktechnik/park-stream)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/freaktechnik/park-stream)
+
+> Note: by default this will deploy as worker on heroku's free tier. This means that it will restart every 24 hours, however it is not affected by the "hybernation" of free dynos. It will however consume [free dyno hours](https://devcenter.heroku.com/articles/free-dyno-hours).
 
 ## Changing the test image
 
